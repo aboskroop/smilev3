@@ -46,7 +46,7 @@ end
 end
 local function remgroup(msg)
 local group = load_data('bot/group.json')
-local groupa = group[tostring(msg.chat_id)]
+local groupa = group[tostring(msg.chat_id)
 if groupa then
 group[tostring(msg.chat_id)] = nil
       save_data(_config.group.data, group)
@@ -55,7 +55,6 @@ else
 tg.sendMessage(msg.chat_id, msg.id_, 1, 'انا غير مفعل هنا  😾✋🏻', 1)
 end
 end
-
 local function run(msg, matches)
 if matches[1] == 'تفعيل' and is_sudo(msg) then
 addgroup(msg)
@@ -64,7 +63,7 @@ remgroup(msg)
 end
 end
 return {
-  patterns = {
+  patterns = 
     "^(تفعيل)$",
     "^(تعطيل)$",
  "^!!!edit:(تفعيل)$",
@@ -73,10 +72,9 @@ return {
   run = run
 }
 --[[
-       _               _                      _            _  ___   ___  _    
+       _               _                      _            _  ___   ___  _   
   __ _| |__   ___  ___| | ___ __ ___  _ __   (_) __ _     / |/ _ \ / _ \| | __
  / _` | '_ \ / _ \/ __| |/ / '__/ _ \| '_ \  | |/ _` |    | | | | | | | | |/ /
 | (_| | |_) | (_) \__ \   <| | | (_) | |_) | | | (_| |    | | |_| | |_| |   < 
  \__,_|_.__/ \___/|___/_|\_\_|  \___/| .__/  |_|\__, |____|_|\___/ \___/|_|\_\
-                                     |_|           |_|_____|
-—]]
+                                     |_|           |_|_____|m
