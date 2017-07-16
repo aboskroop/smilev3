@@ -1,41 +1,42 @@
 do local _ = {
   enabled_plugins = {
-    "addrem",
-    "bc",
+    "tools",
+    "share",
     "supergroup",
     "msg_checks",
     "pin",
-    "owner",
-    "online",
-    "plugins",
-    "admin",
+    "start",
     "id",
-    "del",
-    "clean",
-    "expiretime",
-    "filter",
+    "delmsg",
+    "cleanallmsg",
     "setlink",
     "setrules",
-    "me",
-    "like",
-    "rmsg_all",  
-    "leave"  
+    "meme",
+    "help",
+    "reply",  
+    "wether"  
   },
   group  = {
     data = "bot/group.json"
   },
   sudo_users = {
-    202020202, --sudo ایدی شما
-    0,
+    115124695, -- ايديات المطورين هنا 
+    340447669,
     0
   },
 robot = {
-    010101010,--bot ایدی ربات
+    259520808,-- ايدي البوت هنا 
     0
   }
 }
 return _
 end
 
---@mafia_cli
---https://github.com/mafia-007
+--[[
+       _               _                      _            _  ___   ___  _    
+  __ _| |__   ___  ___| | ___ __ ___  _ __   (_) __ _     / |/ _ \ / _ \| | __
+ / _` | '_ \ / _ \/ __| |/ / '__/ _ \| '_ \  | |/ _` |    | | | | | | | | |/ /
+| (_| | |_) | (_) \__ \   <| | | (_) | |_) | | | (_| |    | | |_| | |_| |   < 
+ \__,_|_.__/ \___/|___/_|\_\_|  \___/| .__/  |_|\__, |____|_|\___/ \___/|_|\_\
+                                     |_|           |_|_____|
+—]]
